@@ -12,6 +12,8 @@ updates:
       # svelte-check and SvelteKit accept TypeScript 5 and 6 only. Remove this when they support 7.
       - dependency-name: typescript
         update-types: ['version-update:semver-major']
+    cooldown:
+      default-days: 7
   - package-ecosystem: github-actions
     directory: /
     schedule:
@@ -19,3 +21,5 @@ updates:
     groups:
       all:
         patterns: ['*']
+    cooldown:
+      default-days: 7
